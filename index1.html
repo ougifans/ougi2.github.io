@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+            padding: 10px;
+            background: #f1f1f1;
+        }
+
+        /* 页眉/Blog 标题 */
+        .header {
+            padding: 30px;
+            text-align: center;
+            background: white;
+        }
+
+        .header h1 {
+            font-size: 50px;
+        }
+
+        /* 设置上导航栏的样式 */
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        /* 设置 topnav 链接的样式 */
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* 改变鼠标悬停时的颜色 */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* 创建两个不相等的彼此并排的浮动列 */
+        /* 左列 */
+        .leftcolumn {
+            float: left;
+            width: 25%;
+        }
+
+        /* 右列 */
+        .rightcolumn {
+            float: left;
+            width: 75%;
+            background-color: #f1f1f1;
+            padding-left: 20px;
+        }
+        .rightcolumn1 {
+                    float: left;
+                    width: 25%;
+                    background-color: #f1f1f1;
+                    padding-left: 20px;
+                }
+
+
+        /* 伪图像 */
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+
+
+        }
+      
+        /* 为文章添加卡片效果 */
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* 清除列之后的浮动 */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* 页脚 */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+        }
+
+        /* 响应式布局 - 当屏幕的宽度小于 800 像素时，使两列堆叠而不是并排 */
+        @media screen and (max-width: 800px) {
+
+            .leftcolumn,
+            .rightcolumn,
+            .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        /* 响应式布局 - 当屏幕的宽度小于 400 像素时，使导航链接堆叠而不是并排 */
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>网页简历</h1>
+
+    </div>
+    <div class="topnav">
+        <a href="index.html">简历主页</a>
+        <a href="index1.html">作品集</a>
+        <a href="index2.html">校园经历</a>
+     
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h3>位佳豪</h3>
+                <h5>13222843167</h5>
+                <!--                <div class="fakeimg" style="height:0px;">证件照</div>
+-->
+
+                <img src="images/证件照.jpg" alt="Description"  
+                style="object-fit:cover;
+                width:100%;
+                height:100%;
+                border: solid 1px #CCC"/>
+
+
+                <h3>求职简介</h3>
+                <p>男 | 13222843167 |  13222843167@163.com | 
+                    求职意向：数据分析、数据运营|实习时间：3-6个月
+                    期望城市：北京、上海、杭州、深圳、广州</p>
+            </div>
+            <div class="card">
+                <h3>学历</h3>
+                <p>江南大学|本科|数字媒体技术|2021-2025</p>
+                <h3>主修课程</h3>
+                <p>数据库原理与技术、数据可视化、概率论与数理统计、Python程序设计、C语言、C++、Java、数据结构、计算机图形学、机器学习;
+</p>
+                
+            </div>
+        </div>
+
+        <div class="rightcolumn">
+            <div class="card">
+                <h3>【数糖科技：兴趣电商开品分析（羽绒服）】</h3>               
+                  <img src="images/羽绒服报告.png" alt="Description"  
+                    style="object-fit:cover;
+                    width:100%;
+                    height:100%;
+                    border: solid 1px #CCC"/>
+                  <a href="files/46-位佳豪-羽绒服-男装_服饰内衣.docx">开品分析报告</a>                 
+            </div>
+             <div class="card">
+                <h3>【本地生活外卖门店经营数据分析】周报</h3>               
+                  <img src="images/外卖周报.png" alt="Description"  
+                    style="object-fit:cover;
+                    width:100%;
+                    height:100%;
+                    border: solid 1px #CCC"/>
+                    <img src="images/外卖看板.png" alt="Description"  
+                    style="object-fit:cover;
+                    width:100%;
+                    height:100%;
+                    border: solid 1px #CCC"/>                             
+            </div>
+             <div class="card">
+                <h3>【内容平台视频数据分析】报告</h3>               
+                  <img src="images/MBTI看板.png" alt="Description"  
+                    style="object-fit:cover;
+                    width:100%;
+                    height:100%;
+                    border: solid 1px #CCC"/>
+                  <img src="images/MBTI报告.png" alt="Description"  
+                    style="object-fit:cover;
+                    width:100%;
+                    height:100%;
+                    border: solid 1px #CCC"/>
+                  <a href="files/B站MBTI视频数据分析报告.docx">数据分析报告</a>                 
+            </div>
+
+           
+        </div>
+<!--
+        <div class="rightcolumn1">
+             <div class="card">
+                <h2>我爱你</h2>
+                <div class="fakeimg" style="height:200px;">Image</div>
+                <p>但这显然与你无关</p>
+            </div>
+        </div>
+-->
+    </div>
+
+    <div class="footer">
+        <h2>web程序设计作业</h2>
+    </div>
+
+</body>
+
+</html>
