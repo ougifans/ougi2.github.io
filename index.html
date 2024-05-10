@@ -12,8 +12,6 @@
             padding: 10px;
             background: #f1f1f1;
         }
-
-        /* 页眉/Blog 标题 */
         .header {
             padding: 30px;
             text-align: center;
@@ -24,13 +22,10 @@
             font-size: 50px;
         }
 
-        /* 设置上导航栏的样式 */
         .topnav {
             overflow: hidden;
             background-color: #333;
         }
-
-        /* 设置 topnav 链接的样式 */
         .topnav a {
             float: left;
             display: block;
@@ -39,52 +34,40 @@
             padding: 14px 16px;
             text-decoration: none;
         }
-
-        /* 改变鼠标悬停时的颜色 */
         .topnav a:hover {
             background-color: #ddd;
             color: black;
         }
 
-        /* 创建两个不相等的彼此并排的浮动列 */
-        /* 左列 */
         .leftcolumn {
             float: left;
-            width: 75%;
+            width: 25%;
         }
 
-        /* 右列 */
         .rightcolumn {
             float: left;
-            width: 25%;
+            width: 75%;
             background-color: #f1f1f1;
             padding-left: 20px;
         }
+        .rightcolumn1 {
+                    float: left;
+                    width: 25%;
+                    background-color: #f1f1f1;
+                    padding-left: 20px;
+                }
 
-        /* 伪图像 */
-        .fakeimg {
-            background-color: #aaa;
-            width: 100%;
-            padding: 20px;
-
-
-        }
-      
-        /* 为文章添加卡片效果 */
         .card {
             background-color: white;
             padding: 20px;
             margin-top: 20px;
         }
 
-        /* 清除列之后的浮动 */
         .row:after {
             content: "";
             display: table;
             clear: both;
         }
-
-        /* 页脚 */
         .footer {
             padding: 20px;
             text-align: center;
@@ -92,17 +75,16 @@
             margin-top: 20px;
         }
 
-        /* 响应式布局 - 当屏幕的宽度小于 800 像素时，使两列堆叠而不是并排 */
         @media screen and (max-width: 800px) {
 
             .leftcolumn,
+            .rightcolumn,
             .rightcolumn {
                 width: 100%;
                 padding: 0;
             }
         }
 
-        /* 响应式布局 - 当屏幕的宽度小于 400 像素时，使导航链接堆叠而不是并排 */
         @media screen and (max-width: 400px) {
             .topnav a {
                 float: none;
@@ -115,67 +97,90 @@
 <body>
 
     <div class="header">
-        <h1>My Website</h1>
-        <p>Resize the browser window to see the effect.</p>
-    </div>
+        <h1>网页简历</h1>
 
+    </div>
     <div class="topnav">
-        <a href="#">Link</a>
-        <a href="#">Link</a>
-        <a href="#">Link</a>
-        <a href="#" style="float:right">Link</a>
+        <a href="index.html">简历主页</a>
+        <a href="index1.html">作品集</a>
+        <a href="index2.html">校园经历</a>
     </div>
 
     <div class="row">
         <div class="leftcolumn">
             <div class="card">
-                <h2>TITLE HEADING</h2>
-                <h5>Title description, Dec 7, 2017</h5>
-                <div class="fakeimg" style="height:200px;">Image</div>
-                <img src="images/图片1.png" alt="Description">
-                <p>Some text..</p>
-                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco.</p>
+                <h3>位佳豪</h3>
+                <h5>13222843167</h5>
+                <!--                <div class="fakeimg" style="height:0px;">证件照</div>
+-->
+
+                <img src="images/证件照.jpg" alt="Description"  
+                style="object-fit:cover;
+                width:100%;
+                height:100%;
+                border: solid 1px #CCC"/>
+
+
+                <h3>求职简介</h3>
+                <p>男 | 13222843167 | 13222843167@163.com | 
+                    求职意向：数据分析、数据运营|实习时间：3-6个月
+                    期望城市：北京、上海、杭州、深圳、广州</p>
             </div>
             <div class="card">
-                <h2>TITLE HEADING</h2>
-                <h5>Title description, Sep 2, 2017</h5>
-                <div class="fakeimg" style="height:200px;">Image</div>
-                <p>Some text..</p>
-                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco.</p>
+                <h3>学历</h3>
+                <p>江南大学|本科|数字媒体技术|2021-2025</p>
+                <h3>主修课程</h3>
+                <p>数据库原理与技术、数据可视化、概率论与数理统计、Python程序设计、C语言、C++、Java、数据结构、计算机图形学、机器学习;
+</p>
+                
             </div>
         </div>
 
         <div class="rightcolumn">
             <div class="card">
-                <h2>About Me</h2>
-                <div class="fakeimg" style="height:100px;">Image</div>
-                <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+                <h3>专业技能</h3>               
+                <p>数据分析：指标体系、量化测算、归因分析、异动分析、业务诊断、分析报告、BI看板、业务梳理、用户画像、网页爬虫、分析框架；</p>
+                <p>工具技能 ：Python、SQL、Excel ，Tableau、影刀RPA、帛马、BI、SPSS;办公技能:Office、飞书、幕布、Notion;</p>
             </div>
             <div class="card">
-                <h3>Popular Post</h3>
-                <div class="fakeimg">
-                    <p>Image</p>
-                </div>
-                <div class="fakeimg">
-                    <p>Image</p>
-                </div>
-                <div class="fakeimg">
-                    <p>Image</p>
-                </div>
-            </div>
-            <div class="card">
-                <h3>Follow Me</h3>
-                <p>Some text..</p>
+                <h3>实训经历</h3>
+                <h4>数糖科技|数据分析师|2024年03月-2024年04月</h4>
+                <p>业务拆解：绘制抖音直播电商、淘宝、拼多多、京东的商业模式图 ，对抖音直播电商的业务进行拆解 ，详细分析用户侧的业务动作；</p>
+                <p>指标体系：基于抖音直播电商的业务动作提炼核心指标、构建业务公式、搭建完整的指标体系 ，实现从业务事实到量化数据的转化；</p>
+                <p>业务诊断：基于蚂蚁金服业务和指标体系进行业务诊断，分析异动原因，追踪并量化数据差距，基于数据差距给出直接的诊断意见；</p>
+                <p>量化测算：以外卖门店为业务背景，根据具体情况调整业务模型中的参数和变量，探索核心指标的增长空间，产出量化策略和目标；</p>
+                <h3>项目经历</h3>
+                <h4>数糖科技：兴趣电商开品分析（羽绒服）基于巨量云图|2024年03月-2024年04月</h4>
+                <p>市场分析：对男士羽绒服市场进行包括市场规模、增长趋势、竞争格局等的分析，为新产品的开发提供深入的市场环境认识和指导；</p>
+                <p>爆款研究：基于巨量云图的羽绒服销售数据，分析爆款的流量通道，探索用户痛点和产品的Aha时刻，总结用户需求提出营销策略；</p>
+                <p>开品假设：基于开品研究的成果，洞察市场实际情况，提出三个防静电羽绒服产品的开品假设，根据ICE打分选择合适的开品方案；</p>
+                <p>分析报告：根据研究内容和开品方案，产出商业级的开品分析报告，包括市场分析、流量通道、竞品分析、商业假设、发展趋势等；</p>
+                <h4>直播电商商业模式分析|2024年01月-2024年02月</h4>
+                <p>行业分析：基于结合数据和资料，使用Pest等分析方法，分析直播电商的发展历程、行业现状、未来趋势、市场规模、主要玩家等；</p>
+                <p>业务梳理：梳理直播电商的主要玩家的业务模式，分层细化用户侧业务动作，构建业务公式，比较头部玩家业务模式的相似和差异；</p>
+                <p>竞品分析：使用SWOT分析、波特五力模型等分析方法，分析各头部玩家的优势、劣势、面临的威胁，刻画头部玩家的竞争格局；</p>
+                <h4>本地生活外卖门店经营数据分析|024年01月-2024年02月</h4>
+                <p>业务公式：梳理用户侧动作，明确用户从登录到下单所经历的业务过程，用过程指标和结果指标量化用户的动作，并建立业务公式；</p>
+                <p>业务周报：基于经营数据，在Excel中制作自动化业务周报，实现联动筛选功能， 日期变更指标自动更新，并可根据外卖平台筛选；</p>
+                <p>漏斗分析：根据用户总量、曝光人数、进店人数、下单人数、有效订单数建立漏斗模型，直观展现各个用户侧业务过程的转化情况；</p>
+                <p>看板搭建：使用Tableau对门店的经营状况进行可视化，探索数据的内在逻辑，使用可视化图表搭建BI看板，总览品牌的经营情况；</p>
+                <h4>电商零售数据分析|2024年02月-2024年03月</h4>
+                <p>用户画像：参考RFM用户分群模型和用户的社会人口学特征，建立用户画像，根据不同类别的用户的消费能力差异，选择对待方案；</p>
+                <p>提效策略：基于经营数据绘制透视图表，注意销售状况的变化情况，下钻探究业务下滑的原因，结合业务的实际情况提出优化策略；</p>
+                <p>业务模型：梳理业务过程，明确业务目标和业务公式，根据业务公式中参数间的计算关系，建立输入、属性、输出结构的业务模型；</p>
+                <p>量化测算：基于业务模型，结合业务实际，适当地调整业务模型的输入和属性参数，观察输出结果的变动，探索业务的优化空间；</p>
+                <h4>内容平台视频数据分析|2024年02月-2024年03月</h4>
+                <p>网页爬虫：使用Python从某短视频平台的首页搜索关键词爬取视频信息，得到1394条视频的信息，包括标题、播放量等18个字段；</p>
+                <p>数据处理：基于分析需求，对数据的原有字段进行扩充，使用Python对标题、标签中含有的关键信息进行提取并储存在新字段里；</p>
+                <p>看板搭建：基于分析需求，使用Tableau对处理后的视频信息进行可视化，从多个维度透视、发掘数据的内在联系，并搭建BI看板；</p>
+                <p>归因分析：关注视频的播放量、点赞数、收藏数、点赞率、收藏率等数据，捕捉数据波动，下钻到具体视频类型，深挖波动原因；</p>
+                <p>分析报告：基于数据图表、BI看板、分析结果，梳理目标社群的发展状况、预测发展形势、撰写分析报告对分析结果进行总结汇总；</p> 
             </div>
         </div>
     </div>
 
     <div class="footer">
-        <h2>Footer</h2>
+        <h2>web程序设计作业</h2>
     </div>
 
 </body>
